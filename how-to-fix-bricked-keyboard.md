@@ -32,12 +32,13 @@
 1. frogtool
 
 # kartdlphax
-> [kartdlphax](https://github.com/PabloMK7/kartdlphax)は、CTGP-7 Projectで知られるPabloMK7氏によるセミプライマリ[^1]Exploitです。『マリオカート7』の『みんなで(ローカル通信プレイ)』を利用してコードを送信します。
+[kartdlphax](https://github.com/PabloMK7/kartdlphax)は、CTGP-7 Projectで知られるPabloMK7氏によるセミプライマリ[^1]Exploitです。『マリオカート7』の『みんなで(ローカル通信プレイ)』を利用してコードを送信します。
 
 1. [plugin.3gx](https://github.com/PabloMK7/kartdlphax/releases/download/v1.2/plugin.3gx)をダウンロードし、CFW機のSDカード `SD:/luma/titles/0004000000030600/` に配置する。
 
-> ** NOTE **
-> `0004000000030600` は、JPN版マリオカート7のTitleIDです。他リージョンのタイトルを利用する場合、そちらに合わせます。
+  > **Note**
+  > 
+  > `0004000000030600` は、JPN版マリオカート7のTitleIDです。他リージョンのタイトルを利用する場合、そちらに合わせます。
 
 2. 3GXに対応している[boot.firm](https://github.com/Nanquitas/Luma3DS/releases/download/v11.0/boot.firm)のビルドをダウンロードし、CFW機のSDカード `SD:/` に配置する。
 
@@ -61,8 +62,7 @@
 以降は、全て故障機における作業を記します。
 
 ## Seedminer
-> Nintendo3DSには、全てのユーザセーブデータに影響を及ぼす128bitの暗号化キー`movable.sed`が存在します。セーブデータにインジェクトを実施する場合、この鍵を使ってデータを復号し、また暗号化する必要があります。
-> [Seedminer](https://github.com/zoogie/seedminer)は、その暗号化キーを、総当たりによって算出するための仕組みです。より詳しい情報を得るには、[ここ](https://zoogie.github.io/web/34%E2%85%95c3/)を訪れると良いでしょう。
+Nintendo3DSには、全てのユーザセーブデータに影響を及ぼす128bitの暗号化キー`movable.sed`が存在します。セーブデータにインジェクトを実施する場合、この鍵を使ってデータを復号し、また暗号化する必要があります。[Seedminer](https://github.com/zoogie/seedminer)は、その暗号化キーを、総当たりによって算出するための仕組みです。より詳しい情報を得るには、[ここ](https://zoogie.github.io/web/34%E2%85%95c3/)を訪れると良いでしょう。
 
 1. [Seedminer](https://github.com/zoogie/seedminer/releases/download/v2.1.6/Seedminer_v2.1.6-x86_64.zip)をダウンロードしたのち展開する。これはPC上で動かすためのソフトウェアである。
 
@@ -100,7 +100,7 @@ done.
 ```
 
 # frogtool
-> [frogtool](https://github.com/zoogie/Frogtool)は、「うごくメモ帳」にハック用のデータをパッチしたり、またパッチ後のアプリを起動するためのユーティリティです。B9sInstallerをパッチして起動することで、故障機に再度CFWを構築し直すことが可能です。
+[frogtool](https://github.com/zoogie/Frogtool)は、「うごくメモ帳」にハック用のデータをパッチしたり、またパッチ後のアプリを起動するためのユーティリティです。B9sInstallerをパッチして起動することで、故障機に再度CFWを構築し直すことが可能です。
 
 1. Seedminerで算出した`movable.sed`を `SD:/`に配置する。
 1. [frogcert.bin](magnet:?xt=urn:btih:d12278ea50bb3574f1fbd327f3d0e2292c70941f&dn=frogcert.bin&tr=https%3a%2f%2ftracker.fastdownload.xyz%3a443%2fannounce&tr=https%3a%2f%2fopentracker.xyz%3a443%2fannounce&tr=http%3a%2f%2fopen.trackerlist.xyz%3a80%2fannounce&tr=http%3a%2f%2ft.nyaatracker.com%3a80%2fannounce&tr=udp%3a%2f%2ftracker.tiny-vps.com%3a6969%2fannounce&tr=udp%3a%2f%2fopen.demonii.si%3a1337%2fannounce&tr=udp%3a%2f%2ftracker.port443.xyz%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.vanitycore.co%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.torrent.eu.org%3a451%2fannounce&tr=udp%3a%2f%2fretracker.lanta-net.ru%3a2710%2fannounce&tr=udp%3a%2f%2fthetracker.org%3a80%2fannounce&tr=http%3a%2f%2ftorrent.nwps.ws%3a80%2fannounce&tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.iamhansen.xyz%3a2000%2fannounce&tr=udp%3a%2f%2fbt.xxx-tracker.com%3a2710%2fannounce&tr=http%3a%2f%2f0d.kebhana.mx%3a443%2fannounce&tr=udp%3a%2f%2fexodus.desync.com%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2ftracker4.itzmx.com%3a2710%2fannounce&tr=udp%3a%2f%2ftracker.justseed.it%3a1337%2fannounce&tr=http%3a%2f%2ftherightsize.net%3a1337%2fannounce&tr=udp%3a%2f%2fretracker.hotplug.ru%3a2710%2fannounce&tr=udp%3a%2f%2ftracker.internetwarriors.net%3a1337%2fannounce&tr=udp%3a%2f%2f9.rarbg.com%3a2800%2fannounce&tr=https%3a%2f%2f2.track.ga%3a443%2fannounce&tr=udp%3a%2f%2fbigfoot1942.sektori.org%3a6969%2fannounce)(magnet) をダウンロードし、`SD:/` に配置する。
